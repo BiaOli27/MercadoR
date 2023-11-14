@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+}
+
+
+.login-container {
+    background-position: 50%;
+    padding: 20px;
+    display: flex;
+    border-radius: 100px;
+    
+}
+
+.login {
+    background-color: white;
+    text-align: left;
+    flex-grow: 1;
+    padding-top: 7%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+img {
+    max-width: 100%;
+    padding: 50px;
+}
+
+.img1{
+    background-color: #1C9BEA;
+}
+
+.inscreva{
+    float: left;
+    font-family: cool;
+}
+
+.logins{
+    text-align: center;
+    padding-bottom: 100px;
+position: absolute;
+
+}
+
+.form{
+width: 300px ;
+font-family: cool;
+text-decoration: none;
+
+}
+
+.link_senha{
+    padding-left: 40px;
+    text-decoration: none;
+    position: absolute
+
+}
+
+a[href="./site.html"] {
+    color: #1C9BEA;
+    
+  }
+  
+  a[href="./inscricao.html"] {
+    color: #1C9BEA;
+    text-decoration: none;
+  }
+
+.logos{
+    position: absolute;
+    text-align: center;
+    padding-right: 1100px;
+}
+
+
+.login_text{
+    text-align: center;
+    font-family: cool;
+    letter-spacing: 4px;
+}
+
+
+input[type="text"] {
+    width: 280px;
+    background-color: #F2F2F2;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 8px;
+    color: #333333;
+    font-size: 14px;
+    
+  }
+
+  input[type="password"] {
+    width: 280px;
+    background-color: #F2F2F2;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 8px;
+    color: #333333;
+    font-size: 14px;
+  }
+
+
+  button[type="submit"] {
+    background-color: #1C9BEA;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 12px 125px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: cool;
+    letter-spacing: 1px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #116092;
+  }
+  
+
+  @font-face {
+    font-family: cool;
+    src: url(./fontes/coolvetica\ rg.otf);
+  }
+
+
+@media (max-width: 768px) {
+    body {
+      height: auto;
+      scrollbar-width: none;
+      overflow: hidden;
+
+    }
+
+    body { overflow: hidden; }
+  
+    .login-container {
+      flex-direction: column;
+      border-radius: 0;
+      padding-bottom: 20%;
+    }
+  
+    .login {
+      padding: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+    }
+  
+    .img1 {
+        display: none;
+    }
+  }
+  
+  

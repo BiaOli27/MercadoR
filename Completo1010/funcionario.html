@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Supermercado RED</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./estilos.css">
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+            <h1>Supermercado RED</h1>
+            <p>Encontre tudo o que você precisa em um só lugar.</p>
+        </div>
+
+        <div class="container">
+            <body class="bodyheader">
+                <div class="navbar text-center">
+                    <a href="funcionario.html"><button type="button" class="btn btn-danger"> Funcionário</button></a>
+                    <a href="cliente.html"><button type="button" class="btn btn-danger"> Cliente</button></a>
+                    <a href="carrinho.html"><button type="button" class="btn btn-danger">Produtos</button></a>
+                    <a href="cadastro.html"><button type="button" class="btn btn-danger">Cadastro</button></a>
+                    <a href="login.html"><button type="button" class="btn btn-danger">Login</button></a>
+
+              </div>
+            </body>
+        
+
+    </header>
+
+<div class="container">
+    <h2 class="text-center">Login do Gerente</h2>
+    <form action="funcionario.php" method="post">
+        <div class="form-group">
+            <label for="nmfuncionario">Nome funcionário:</label>
+            <input type="text" class="form-control" id="nmfuncionario" name="nmfuncionario" required>
+        </div>
+        <div class="form-group">
+            <label for="cpffuncionario">CPF funcionário:</label>
+            <input type="text" class="form-control" id="cpffuncionario" name="cpffuncionario" required>
+        </div>
+        <div class="form-group">
+            <label for="telfuncionario">Telefone funcionário:</label>
+            <input type="text" class="form-control" id="telfuncionario" name="telfuncionario" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" name="save">Enviar</button>
+    </form>
+</div>
+
+<footer class="footer">
+    <h3>Supermercado RED</h3>
+    <p>Endereço: Rua da Loja, 123</p>
+    <p>Telefone: (123) 456-7890</p>
+    <p>Email: contato@supermercadored.com</p>
+</footer>
+
+</body>
+</html>

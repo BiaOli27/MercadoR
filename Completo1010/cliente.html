@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Supermercado RED</title>
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+            <h1>Supermercado RED</h1>
+            <p>Encontre tudo o que você precisa em um só lugar.</p>
+        </div>
+
+        <div class="container">
+            <body class="bodyheader">
+                <div class="navbar text-center">
+                    <a href="funcionario.html"><button type="button" class="btn btn-danger"> Funcionário</button></a>
+                    <a href="cliente.html"><button type="button" class="btn btn-danger"> Cliente</button></a>
+                    <a href="carrinho.html"><button type="button" class="btn btn-danger">Produtos</button></a>
+                    <a href="cadastro.html"><button type="button" class="btn btn-danger">Cadastro</button></a>
+                    <a href="login.html"><button type="button" class="btn btn-danger">Login</button></a>
+
+              </div>
+            </body>
+        
+
+    </header>
+<div class="container">
+    <h2 class="text-center">Login do Gerente</h2>
+    <form action="cliente.php" method="post">
+        <div class="form-group">
+            <label for="nmcliente">Nome cliente:</label>
+            <input type="text" class="form-control" id="nmcliente" name="nmcliente" required>
+        </div>
+        <div class="form-group">
+            <label for="cpfcliente">CPF cliente:</label>
+            <input type="text" class="form-control" id="cpfcliente" name="cpfcliente" required>
+        </div>
+        <div class="form-group">
+            <label for="telcliente">Telefone cliente:</label>
+            <input type="text" class="form-control" id="telcliente" name="telcliente" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" name="save">Enviar</button>
+    </form>
+</div>
+
+<footer class="footer">
+    <h3>Supermercado RED</h3>
+    <p>Endereço: Rua da Loja, 123</p>
+    <p>Telefone: (123) 456-7890</p>
+    <p>Email: contato@supermercadored.com</p>
+</footer>
+
+</body>
+
+
+
+
+
+<!---<body>
+    <h2>Cadastro de Funcionário</h2>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <label for="nmfuncionario">Nome do Funcionário:</label>
+        <input type="text" name="nmfuncionario" required><br>
+
+        <label for="cpffuncionario">CPF do Funcionário:</label>
+        <input type="text" name="cpffuncionario" required><br>
+
+        <label for="telfuncionario">Telefone do Funcionário:</label>
+        <input type="text" name="telfuncionario" required><br>
+
+        <input type="submit" name="save" value="Cadastrar">
+    </form>
+</body>

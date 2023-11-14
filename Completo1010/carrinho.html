@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Supermercado RED</title>
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <!--  <style>
+         body { font-family: Arial, sans-serif; background-color: #000000; }
+        .form-group { margin-bottom: 15px; }
+        .navbar { background-color: #000000; }
+        .navbar .btn { margin: 0 5px;  }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(224, 10, 10, 0.2); }
+        h1 { text-align: center; margin: 0 0 20px; }
+        h2 { background-color: #000000; color: #ffffff;}
+        .coluna { display: flex; flex-wrap: wrap; justify-content: space-between; }
+        .coluna img { max-width: 100%; height: auto; margin-bottom: 10px; color: #ffffff;}
+        .btn-adicionar { width: 100%; text-align: center; margin-top: 10px; }
+        .footer { background-color: #000000; color: #ffffff; text-align: center; padding: 20px; }
+    </style> -->
+</head>
+
+
+<header>
+    <div class="container">
+        <h1>Supermercado RED</h1>
+        <p>Encontre tudo o que você precisa em um só lugar.</p>
+    </div>
+
+    <div class="container">
+        <body class="bodyheader">
+            <div class="navbar text-center">
+                <a href="funcionario.html"><button type="button" class="btn btn-danger"> Funcionário</button></a>
+                <a href="cliente.html"><button type="button" class="btn btn-danger"> Cliente</button></a>
+                <a href="carrinho.html"><button type="button" class="btn btn-danger">Produtos</button></a>
+                <a href="cadastro.html"><button type="button" class="btn btn-danger">Cadastro</button></a>
+                <a href="login.html"><button type="button" class="btn btn-danger">Login</button></a>
+
+          </div>
+        </body>
+    
+
+</header>
+
+<body>
+
+<div class="navbar text-center">
+    <a href="inicial.html" class="btn btn-outline-success">Inicial</a>
+    <a href="gerente.html" class="btn btn-outline-success">Gerente</a>
+    <a href="funcionario.html" class="btn btn-outline-success">Funcionário</a>
+    <a href="cliente.html" class="btn btn-outline-success">Cliente</a>
+    <a href="cadastro.html" class="btn btn-outline-success">Cadastro</a>
+</div>
+
+<div class="container mt-5">
+    <h1>Carrinho de Compras</h1>
+    <div class="coluna">
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 6</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 7</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 8</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 8</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 8</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 8</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 6</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 7</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 8</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 8</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 8</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <img src="prod4-removebg-preview.png" alt="">
+            <p>Produto 8</p>
+            <button class="btn btn-outline-danger fw-bold btn-adicionar" onclick="adicionarAoCarrinho(10)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</div>
+
+
+<h2 class="text-center mt-5">Carrinho</h2>
+<ul id="cart"></ul>
+
+<script src="carrinho.js"></script>
+
+<footer class="footer mt-5">
+    <h3>Supermercado RED</h3>
+    <p>Endereço: Rua da Loja, 123</p>
+    <p>Telefone: (123) 456-7890</p>
+    <p>Email: contato@supermercadored.com</p>
+</footer>
+
+</body>
+</html>
